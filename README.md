@@ -1,0 +1,2 @@
+@sailrs/eslint-config
+=====================

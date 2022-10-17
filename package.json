@@ -1,0 +1,31 @@
+{
+  "name": "@sailrs/eslint-config",
+  "version": "0.1.0",
+  "author": "Sailrs GmbH (https://sailrs.io)",
+  "license": "MIT",
+  "description": "ESLint config for Sailrs to ensure code quality",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "repository": "git@github.com:sailrs-io/eslint-config.git",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "main": "index.js",
+  "packageManager": "yarn@3.2.4",
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5",
+    "@typescript-eslint/parser": "^5",
+    "eslint": "^8",
+    "eslint-config-prettier": "^8",
+    "eslint-plugin-prettier": "^4",
+    "prettier": "^2"
+  }
+}
