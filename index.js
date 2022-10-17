@@ -1,9 +1,11 @@
 module.exports = {
-  extends: "eslint:recommended",
+  extends: [
+    "eslint:recommended",
+    "plugin:prettier/recommended", // needs to be last
+  ],
   env: {
     browser: true,
     es2018: true,
-    node: true,
   },
   parserOptions: {
     sourceType: "module",
@@ -12,14 +14,14 @@ module.exports = {
     "accessor-pairs": "error",
     "array-callback-return": "error",
     "callback-return": "error",
-    "camelcase": "error",
+    camelcase: "error",
     "class-methods-use-this": "error",
     "consistent-return": "error",
     "consistent-this": ["error", "placeholder for invalid variable name"],
     "constructor-super": "error",
     "default-case": "error",
     "dot-notation": "error",
-    "eqeqeq": "error",
+    eqeqeq: "error",
     "for-direction": "error",
     "func-name-matching": [
       "error",
@@ -290,12 +292,12 @@ module.exports = {
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
-    "radix": ["error", "as-needed"],
+    radix: ["error", "as-needed"],
     "require-atomic-updates": "error",
     "require-await": "error",
     "require-unicode-regexp": "error",
     "require-yield": "error",
-    "strict": "error",
+    strict: "error",
     "symbol-description": "error",
     "use-isnan": "error",
     "valid-typeof": [
@@ -305,6 +307,6 @@ module.exports = {
       },
     ],
     "vars-on-top": "error",
-    "yoda": "error",
+    yoda: "error",
   },
-}
+};
