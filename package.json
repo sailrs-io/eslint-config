@@ -2,6 +2,7 @@
   "name": "@sailrs/eslint-config",
   "version": "0.1.0",
   "author": "Sailrs GmbH (https://sailrs.io)",
+  "private": false,
   "license": "MIT",
   "description": "ESLint config for Sailrs to ensure code quality",
   "keywords": [
@@ -27,5 +28,8 @@
     "eslint-config-prettier": "^8",
     "eslint-plugin-prettier": "^4",
     "prettier": "^2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
