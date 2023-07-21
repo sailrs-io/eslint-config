@@ -10,8 +10,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           cache: yarn
-      - run: yarn --immutable
-      - run: yarn prettier --check .
+      - run: npm ci
+      - run: npx prettier --check .
 
   test:
     name: test (Node ${{ matrix.node-version }}, ESLint ${{ matrix.eslint-version }})
@@ -26,6 +26,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: yarn
-      - run: yarn --immutable
-      - run: yarn add --dev eslint@${{ matrix.eslint-version }}
-      - run: yarn test
+      - run: npm ci
+      - run: npm install --save-dev eslint@${{ matrix.eslint-version }}
+      - run: npm run test
