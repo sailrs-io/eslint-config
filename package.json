@@ -10,10 +10,10 @@
   ],
   "repository": "git@github.com:sailrs-io/eslint-config.git",
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint .",
+    "release": "release-it"
   },
   "main": "index.js",
-  "packageManager": "yarn@3.2.4",
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.1.1",
     "eslint": "^8.45.0",
