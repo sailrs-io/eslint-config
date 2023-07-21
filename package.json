@@ -1,6 +1,6 @@
 {
   "name": "@sailrs/eslint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Sailrs GmbH (https://sailrs.io)",
   "license": "MIT",
   "description": "ESLint config for Sailrs to ensure code quality",
