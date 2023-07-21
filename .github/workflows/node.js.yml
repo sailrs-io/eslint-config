@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           cache: yarn
-      - run: yarn --frozen-lockfile
+      - run: yarn --immutable
       - run: yarn prettier --check .
 
   test:
