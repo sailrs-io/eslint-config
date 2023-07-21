@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12, 14, 16, 18]
+        node-version: [14, 16, 18]
         eslint-version: [8]
     steps:
       - uses: actions/checkout@v3
@@ -26,6 +26,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: yarn
-      - run: yarn --frozen-lockfile
+      - run: yarn --immutable
       - run: yarn add --dev eslint@${{ matrix.eslint-version }}
       - run: yarn test
